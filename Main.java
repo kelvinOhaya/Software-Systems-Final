@@ -4,3 +4,10 @@
 // RAYØ
 //Adama
 //Samuel Smith
+
+public class Main {
+    public static void main(String[] args) {
+        Slotomainia slotMachine = new Slotomainia();
+        slotMachine.run();
+    }
+}
