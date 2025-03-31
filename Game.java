@@ -1,3 +1,5 @@
-public interface Game {
-    public void run();
+public class Game {
+    public void run() {
+        System.out.println("Enter the game logic here!");
+    };
 }
