@@ -58,10 +58,6 @@ public class BlackJack extends Game{
     String message = "";
 
 
-    //constructor
-    BlackJack(){
-        run();
-
     }
     @Override
     public void run(){
@@ -70,9 +66,32 @@ public class BlackJack extends Game{
                             Welcome to Black Jack!
                         -----------------------------
                                     Rules: 
-                        1.           
+                        1. Choose an amount to bet 
+                           with the dealer 
+                        2. 2 cards of value 1-11 will
+                           given to the player and
+                           dealer
+                        3. The winner is determined by
+                           who ever is closer to or at 
+                           the total value 21. Any value 
+                           over is an automatic loss
+                        4. Player and dealer have the 
+                           option to hit(Recieve another
+                           card) after the initial 2 
+                           cards or stay(keep their
+                           current hand)
+                        5. Aces can have a value of 1
+                           or 11 depending on which is
+                           needed for use
+                        6. One of the dealer's first two
+                           cards will be hidden and the 
+                           dealer will onl be able to
+                           hit or stay after the player
+                        7. Ties occur when the dealer and
+                           player has the same value 
+                           meaning no loss or gain in
+                           currency for the player
                             """);
-
         loop();
         /*  Checks
         System.out.println("Dealer:");
@@ -89,6 +108,7 @@ public class BlackJack extends Game{
         System.out.println(playerAceCount);
         */
     }
+    //Same as kelvins loop
     public void loop(){
         while(true){
             if (tempMoney == 0) {
