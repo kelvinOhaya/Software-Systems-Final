@@ -215,6 +215,10 @@ public class BlackJack extends Game{
                         reduceDealerAce();
                         System.out.println("Dealer's new hand: "+ dealerHand);
                         System.out.println("Dealer sum: "+ dealerSum);
+                        if(playerSum < dealerSum && dealerSum <= 21){  
+                            message = "You lose!";
+                            tempMoney -= bet;
+                        }
                         if(dealerSum > 21){
                             message = "Dealer BUST- Sum greater than 21\n--You win!--";
                             tempMoney += bet;
